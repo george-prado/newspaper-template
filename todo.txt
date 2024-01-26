@@ -1,0 +1,6 @@
+[X] Criar página/layout usando Bootstrap
+[X] Header, main & footer
+[X] Grid System do Bootstrap
+[X] Componentes da doc do Bootstrap
+
+Entrega: https://dontpad.com/coders-1122/atividade-5

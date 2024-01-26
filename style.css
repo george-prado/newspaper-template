@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script&family=Great+Vibes&family=Sacramento&display=swap');
+
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-info-light {
+    background-image:linear-gradient(90deg, 
+    rgba(150, 150, 150, 0.10) 0%,
+        rgba(150, 150, 150, 0.075) 25%,
+        rgba(150, 150, 150, 0.05) 50%,
+        rgba(150, 150, 150, 0.03) 70%,
+        rgba(240, 248, 255, 0.1) 85%)
+}
+
+#main-title {
+    font: normal bolder 3rem "Pacifico";
+}
+
+#post-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.post-card {
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 1rem;
+    flex: 0 0 calc(33.33% - 2rem);
+    box-sizing: border-box;
+    text-align: flex-start;
+}
+
+.post-card h1 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

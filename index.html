@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Template jornal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ::::::::::::::::::::::::::::::::::  header  :::::::::::::::::::::::::::::::::: -->
+    <header class="p-3 mb-3 border-bottom">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-center"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none"
+          >
+            <img
+              src="src/trylogo.png"
+              class="bi me-2"
+              width="60"
+              height="60"
+              role="img"
+              aria-label="Logo"
+            />
+          </a>
+
+          <a href="#" id="main-title" class="nav-link mx-auto"
+            >New Unlikely Times</a
+          >
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Buscar..."
+              aria-label="Search"
+            />
+          </form>
+
+          <div class="dropdown text-end">
+            <a
+              href="#"
+              class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="https://github.com/mdo.png"
+                alt="mdo"
+                width="32"
+                height="32"
+                class="rounded-circle"
+              />
+            </a>
+            <ul class="dropdown-menu text-small">
+              <li><a class="dropdown-item" href="#">Configurações</a></li>
+              <li><a class="dropdown-item" href="#">Perfil</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Sair</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-scroller py-1 mb-3 border-bottom">
+        <nav class="nav nav-underline justify-content-between">
+          <a class="nav-item nav-link link-body-emphasis active" href="#"
+            >Mundo</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="#">Brasil</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#"
+            >Tecnologia</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="#">Design</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">Cultura</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">Negócios</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">Políticas</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">Opinião</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">Ciência</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">Saúde</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">Moda</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">Turismo</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- :::::::::::::::::::::::::::::::::::  main  ::::::::::::::::::::::::::::::::::: -->
+    <main class="container">
+      <!-- Notícia principal / Anúncio / Paywall -->
+      <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-info-light">
+        <div class="col-lg-6 px-0">
+          <h1 class="display-4 fst-italic">Insira aqui algum título ou talvez propaganda</h1>
+          <p class="lead my-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam
+            facere, consequuntur aut voluptatibus dolore molestiae!
+          </p>
+          <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue lendo...</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Cards de notícias -->
+      <div class="row mb-2">
+        <!-- Notícia 1 -->
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Mundo</strong>
+              <h3 class="mb-0">Título da notícia</h3>
+              <div class="mb-1 text-body-secondary">26 de Jan</div>
+              <p class="card-text mb-auto">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Praesentium esse architecto ducimus alias earum porro expedita
+                natus nostrum temporibus
+              </p>
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continue lendo
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notícia 2 -->
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+              <h3 class="mb-0">Título de outra notícia</h3>
+              <div class="mb-1 text-body-secondary">26 de Jan</div>
+              <p class="mb-auto">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptatibus ullam aspernatur quam quo ia ke voluptatem quae
+                perspiciatis dolorum eos minus
+              </p>
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continue lendo
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+
+            <div class="col-auto d-none d-lg-block">
+              <svg
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artigos de Opinião -->
+      <div class="row g-5">
+        <div class="col-md-8">
+          <h3 class="pb-4 mb-4 fst-italic border-bottom"> Recortes do Editorial</h3>
+
+          <!-- Blog post 1 -->
+          <article class="blog-post">
+            <h2 class="display-5 link-body-emphasis mb-1">Post do tipo blog/artigo</h2>
+            <p class="blog-post-meta mb-4">
+              23 de Janeiro de 2024, escrito por <a href="#">Rodion Raskolnikov</a>
+            </p>
+
+            <p>
+              Esse texto é um lorem, por favor não leia. Ele é apenas um
+              demonstrativo dos elementos visuais e de conteúdo possíveis nessa
+              área. Espera, esse parágrafo também é um lorem!
+            </p>
+            <hr />
+            <p>
+              Esse parágrafo adicional aqui é outro placeholder, assim fica mais
+              visível como textos e conteúdos maiores vão impactar na
+              organizaçã- cansei. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Harum, eius. Dolor eum sequi totam accusamus
+              officia quisquam! Dignissimos vitae, illo reprehenderit dolorum
+              consequuntur atque soluta repellat, perspiciatis molestiae unde
+              natus.
+            </p>
+            <h2 class="mb-1 mt-3">Blocos de citações</h2>
+            <p>Esse aqui é um exemplo de citações:</p>
+            <blockquote class="blockquote mt-5 mb-5 text-center">
+              <p><em>Usar ou não usar lorem, eis o ipsum</em> - Hamloret</p>
+            </blockquote>
+            <p>
+              Aqui também é outro lorem, sim eles são realmente necessários para melhorar a visualização do produto final e ver quão bonito (ou não) vai ficar. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis doloremque ad quibusdam exercitationem commodi tempora ex itaque enim nisi. Quaerat numquam delectus quos ea odit quae recusandae fuga commodi magnam! Para ficar mais legal, um lorem com listas:
+            </p>
+            <h3 class="mt-3 mb-1">Lista exemplo</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, blanditiis. Atque ipsam numquam, eius saepe fuga ipsum officia quas reiciendis cupiditate a nobis unde ipsa. Rerum ipsam voluptates id! Consectetur!:
+            </p>
+            <ul class="mt-1 mb-2">
+              <li>Veni</li>
+              <li>Vidi</li>
+              <li>Vici</li>
+            </ul>
+            <p>E também uma lista loremdernada:</p>
+            <ol class="mt-1">
+              <li>Lorem ipsum</li>
+              <li>dolor sit</li>
+              <li>amet consectetur</li>
+            </ol>
+            
+            <h2>Subtítulorem</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo totam aperiam beatae consequatur quos ullam doloribus, sed autem harum laboriosam <strong>como também visto em</strong>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+                >alguma link interno para outro artigo, excelente para o SEO</a>.
+            </p>
+            
+            <p class="mt-3 mb-5">
+              Por fim, uma conclusão ao artigo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo labore ipsa libero voluptatibus, harum magnam fugit voluptas laudantium doloremque.
+          </article>
+
+          <!-- Blog post 2 -->
+          <article class="blog-post">
+            <h2 class="display-5 link-body-emphasis mb-1">Próximo post</h2>
+            <p class="blog-post-meta mb-4">
+              9 de Janeiro de 2024, escrito por <a href="#">Dante Alighieri</a>
+            </p>
+
+            <p>
+              Esse texto é um lorem, por favor não leia. Ele é apenas um
+              demonstrativo dos elementos visuais e de conteúdo possíveis nessa
+              área. Espera, esse parágrafo também é um lorem!
+            </p>
+            <hr />
+            <p>
+              Esse parágrafo adicional aqui é outro placeholder, assim fica mais
+              visível como textos e conteúdos maiores vão impactar na
+              organizaçã- cansei. Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Harum, eius. Dolor eum sequi totam accusamus
+              officia quisquam! Dignissimos vitae, illo reprehenderit dolorum
+              consequuntur atque soluta repellat, perspiciatis molestiae unde
+              natus.
+            </p>
+            <h2 class="mb-1 mt-3">Blocos de citações</h2>
+            <p>Esse aqui é um exemplo de citações:</p>
+            <blockquote class="blockquote mt-5 mb-5 text-center">
+              <p><em>Usar ou não usar lorem, eis o ipsum</em> - Hamloret</p>
+            </blockquote>
+            <p>
+              Aqui também é outro lorem, sim eles são realmente necessários para melhorar a visualização do produto final e ver quão bonito (ou não) vai ficar. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis doloremque ad quibusdam exercitationem commodi tempora ex itaque enim nisi. Quaerat numquam delectus quos ea odit quae recusandae fuga commodi magnam! Para ficar mais legal, um lorem com listas:
+            </p>
+            <h3 class="mt-3 mb-1">Lista exemplo</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, blanditiis. Atque ipsam numquam, eius saepe fuga ipsum officia quas reiciendis cupiditate a nobis unde ipsa. Rerum ipsam voluptates id! Consectetur!:
+            </p>
+            <ul class="mt-1 mb-2">
+              <li>Veni</li>
+              <li>Vidi</li>
+              <li>Vici</li>
+            </ul>
+            <p>E também uma lista loremdernada:</p>
+            <ol class="mt-1">
+              <li>Lorem ipsum</li>
+              <li>dolor sit</li>
+              <li>amet consectetur</li>
+            </ol>
+            
+            <h2>Subtítulorem</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo totam aperiam beatae consequatur quos ullam doloribus, sed autem harum laboriosam <strong>como também visto em</strong>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+                >alguma link interno para outro artigo, excelente para o SEO</a
+              >.
+            </p>
+            
+            <p class="mt-3 mb-5">
+              Por fim, uma conclusão ao artigo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo labore ipsa libero voluptatibus, harum magnam fugit voluptas laudantium doloremque.
+          </article>
+
+          <!-- Blog post 3 -->
+          <article class="blog-post">
+            <h2 class="display-5 link-body-emphasis mb-1">Novidades</h2>
+            <p class="blog-post-meta mb-4">
+              14 de Dezembro de 2023, escrito por <a href="#">Beatrice Portinari</a>
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nulla ab blanditiis ratione temporibus expedita numquam aperiam consequatur, deserunt quasi dolorem ad, veniam rerum nam? Incidunt doloremque saepe non. Odio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi nisi rem, necessitatibus eius sunt odit quod debitis animi atque exercitationem itaque dicta nostrum explicabo? Quisquam fugit modi beatae voluptatibus. Id.
+            </p>
+            <p>
+              This is some additional paragraph placeholder content. It's a
+              slightly shorter version of the other highly repetitive body text
+              used throughout.
+            </p>
+          </article>
+
+          <!-- Botões nav dos artigos -->
+          <nav class="blog-pagination mt-4" aria-label="Pagination">
+            <a class="btn btn-outline-primary rounded-pill" href="#">Antigos</a>
+            <a
+              class="btn btn-outline-secondary rounded-pill disabled"
+              aria-disabled="true"
+              >Mais recentes</a
+            >
+          </nav>
+        </div>
+
+        <!-- Seção "sobre" -->
+        <div class="col-md-4">
+          <div class="position-sticky" style="top: 2rem">
+            <div class="p-4 mb-3 bg-body-tertiary rounded">
+              <h4 class="fst-italic">Sobre</h4>
+              <p class="mb-0">
+                Estamos em publicação há 987 anos, buscando sempre Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque nesciunt esse quod facere hic et nisi!
+              </p>
+            </div>
+
+            <div>
+              <h4 class="fst-italic">Artigos recentes</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                    href="#">
+                    <svg
+                      class="bd-placeholder-img"
+                      width="100%"
+                      height="96"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      preserveAspectRatio="xMidYMid slice"
+                      focusable="false">
+                      <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">Postagem em alta #1</h6>
+                      <small class="text-body-secondary">18 de Dezembro de 2023</small>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                    href="#">
+                    <svg
+                      class="bd-placeholder-img"
+                      width="100%"
+                      height="96"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      preserveAspectRatio="xMidYMid slice"
+                      focusable="false">
+                      <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">Postagem em alta #2</h6>
+                      <small class="text-body-secondary">14 de Dezembro de 2023</small>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                    <svg
+                      class="bd-placeholder-img"
+                      width="100%"
+                      height="96"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      preserveAspectRatio="xMidYMid slice"
+                      focusable="false">
+                      <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">Postagem em alta #3 com um nome exageradamente grande</h6>
+                      <small class="text-body-secondary">27 de Novembro de 2023</small>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Links para publicações por meses -->
+            <div class="p-4">
+              <h4 class="fst-italic">Arquivos</h4>
+              <ol class="list-unstyled mb-0">
+                <li><a href="#">Março 2021</a></li>
+                <li><a href="#">Fevereiro 2021</a></li>
+                <li><a href="#">Janeiro 2021</a></li>
+                <li><a href="#">Dezembro 2020</a></li>
+                <li><a href="#">Novembro 2020</a></li>
+                <li><a href="#">Outubro 2020</a></li>
+                <li><a href="#">Setembro 2020</a></li>
+                <li><a href="#">Agosto 2020</a></li>
+                <li><a href="#">Julho 2020</a></li>
+                <li><a href="#">Junho 2020</a></li>
+                <li><a href="#">Maio 2020</a></li>
+                <li><a href="#">Abril 2020</a></li>
+              </ol>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="p-4">
+              <h4 class="fst-italic">Siga-nos</h4>
+              <ol class="list-unstyled">
+                <li><a href="https://github.com/george-prado">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ::::::::::::::::::::::::::::::::::  footer  :::::::::::::::::::::::::::::::::: -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-5">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted"><em>Acredite, aqui também é lorem.</em>
+            <strong><a href="https://github.com/george-prado">2024 ©Company, Inc.</a></strong>
+          </span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use></svg>
+              </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use></svg>
+              </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use></svg>
+              </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- :::::::::::::::::::::::::::::  Bootstrap scripts  ::::::::::::::::::::::::::::: -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
